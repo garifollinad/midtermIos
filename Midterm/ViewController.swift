@@ -21,12 +21,7 @@ class ViewController: UIViewController {
         guard
             let selectVC = storyboard.instantiateViewController(identifier: "selectColor") as? SelectViewController
         else { return }
-        
-        selectVC.color = { [weak self] color in
-            guard let self = self else { return }
-            
-            self.view.backgroundColor = color
-        }
+    
         
         self.present(selectVC, animated: true)
     }
