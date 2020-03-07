@@ -20,13 +20,12 @@ class SelectViewController: UIViewController {
     
     @IBAction func blue(_ sender: UIButton) {
         
+        
          if sender.titleLabel?.text == "Red" {
-             vc.color?(UIColor.red)
+            self.view.backgroundColor = UIColor.red
          } else {
-             vc.color?(UIColor.blue)
+              self.view.backgroundColor = UIColor.blue
          }
-         
-         self.dismiss(animated: true)
     }
 
 }
